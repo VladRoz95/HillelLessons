@@ -1,7 +1,36 @@
 *{
     margin: 0,0,0,10;
     padding: 0,10;
+    
 }
 header{
     text-align: center;
 }
+h1{
+    color: red;
+    text-align: center;
+}
+#maintext{
+    color: blueviolet;
+}
+.secondtext{
+    color: rgba(90, 15, 160, 0.695);
+}
+.text1{
+    color: red;
+}
+.text2 {
+    font-size: large;
+}
+ p b {
+    color: gold;
+ }
+ ul>li{
+    color: rgb(155, 7, 7)
+ }
+ b+i{
+    color: rgb(131, 39, 217);
+ }
+ h2~p{
+    color: seagreen;
+ }
