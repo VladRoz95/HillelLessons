@@ -14,15 +14,14 @@ html {
   font-weight: 400;
   line-height: 1.5;
   color: #303030;
-  background-image: url(../img/-1x-1.jpg);
+  background-image: url(../img/bmw.png);
   background-size: cover;
 }
 
 .container {
   width: 100%;
   max-width: 1140px;
-  /* margin-left: auto; */
-  margin-top: 100px;
+  margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -48,7 +47,26 @@ nav {
   display: inline-block;
   margin: 15px;
 }
-h1 {
+
+form {
+  background-color: white;
   text-align: center;
-  text-decoration: underline;
+  max-width: 200px;
+  margin: 100px auto;
+  border: solid darkgrey;
+  border-radius: 1rem;
+  box-shadow: 0 0 30px 20px rgb(169 169 169 / 50%);
+  padding: 10px;
+}
+input {
+  padding: 5px;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.button {
+  border: solid;
+  padding-left: 20px;
+  padding-right: 20px;
 }

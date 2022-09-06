@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Works</title>
+    <link rel="stylesheet" href="../font/font.css">
+    <link rel="stylesheet" href="../styles/style3.css">
+</head>
+
+<body>
+    <header class="naw1">
+        <nav><a href="../index.html">Home</a></nav>
+        <nav><a href="#">Search</a></nav>
+    </header>
+    <header class="naw2">
+        <nav><a href="./registration.html">Registration</a></nav>
+        <nav><a href="./login.html">Authorization</a></nav>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <form action="https://fom.in.ua/echo" method="post">
+                    <label>
+                        <h1>Searching</h1>
+                        <hr>
+                    </label>
+                    <div class="search1">
+                        <p>
+                            <label for="body">Body type</label>
+                            <select id="body" name="Body">
+                                <option value="none" disabled selected>Body type</option>
+                                <option value="val1">Buggy</option>
+                                <option value="val2">Convertible</option>
+                                <option value="val3">Coupe</option>
+                                <option value="val4">Flower car</option>
+                                <option value="val5">Hatchback</option>
+                                <option value="val6">Hearse</option>
+                                <option value="val7">Limousine</option>
+                                <option value="val8">Microvan</option>
+                                <option value="val9">Minivan</option>
+                                <option value="val10">Panel van</option>
+                                <option value="val11">Panel truck</option>
+                                <option value="val12">Pickup truck</option>
+                                <option value="val13">Roadster</option>
+                                <option value="val14">Sedan</option>
+                                <option value="val15">Shooting-brake</option>
+                                <option value="val16">Station wagon</option>
+                                <option value="val17">Targa top</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label for="brand">Brand</label>
+                            <select id="brand" name="Brand">
+                                <option value="none" disabled selected>Car Brand</option>
+                                <option value="val1">BMW</option>
+                                <option value="val2">Audi</option>
+                                <option value="val3">Chevrolet</option>
+                                <option value="val4">Ford </option>
+                                <option value="val5">Honda </option>
+                                <option value="val6">Hyundai </option>
+                                <option value="val7">Kia </option>
+                                <option value="val8">Lexus </option>
+                                <option value="val9">Mazda </option>
+                                <option value="val10">Mercedes-Benz </option>
+                                <option value="val11">Mitsubishi </option>
+                                <option value="val12">Nissan </option>
+                                <option value="val12">Opel </option>
+                                <option value="val12">Peugeot </option>
+                                <option value="val12">Renault </option>
+                                <option value="val12">Skoda </option>
+                                <option value="val12">Toyota </option>
+                                <option value="val12">Volkswagen </option>
+                                <option value="val12">Volvo </option>
+                            </select>
+                        </p>
+                        <p>
+                            <label for="contry">Contry</label>
+
+                            <select id="contry" name="contry">
+                                <option value="none" disabled selected>Country</option>
+                                <option value="val1">Gemany</option>
+                                <option value="val2">France</option>
+                                <option value="val3">Japan</option>
+                                <option value="val4">China</option>
+                                <option value="val5">Korea</option>
+                                <option value="val6">England</option>
+                                <option value="val7">Australia</option>
+                                <option value="val8">Greece</option>
+                                <option value="val9">Italy</option>
+                                <option value="val10">Spain</option>
+                            </select>
+                        </p>
+                        <p> <label for="numbermin">Price min. $</label>
+                            <input id="numbermin" type="number" min="0" name="From" placeholder="Min Price $">
+                            <label for="numbermax">Price max. $</label>
+                            <input id="numbermax" type="number" name="To" placeholder="Max Prise $">
+                        </p>
+                        <p>
+                            <label for="year1">From</label>
+                            <input id="year1" type="month" min="1980">
+                            <label for="year2">To</label>
+                            <input id="year2" type="month">
+                        </p>
+                    </div>
+                    <div class="search2">
+                        <fieldset>
+                            <legend>Quality</legend>
+                            <p><label>
+                                    <input type="checkbox" name="checkbox" value="option1">
+                                    <span>Сar hit</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="checkbox" value="option2">
+                                    <span>Secondhand</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="checkbox" value="option3">
+                                    <span>Not cleared by customs.</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="checkbox" value="option4">
+                                    <span>On credit.</span>
+                                </label>
+                            </p>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Type of fuel</legend>
+                            <p><label>
+                                    <input type="radio" name="radio1" value="option1">
+                                    <span>Gasoline</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="radio1" value="option2">
+                                    <span>Diesel</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="radio1" value="option3">
+                                    <span>Gas</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="radio1" value="option4">
+                                    <span>Electro</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="radio1" value="option5">
+                                    <span>Hybrid</span>
+                                </label>
+                            </p>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Transmission</legend>
+                            <p>
+                                <label>
+                                    <input type="radio" name="radio" value="option1">
+                                    <span>Automatic</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="radio" value="option1">
+                                    <span>Manual </span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="radio" value="option1">
+                                    <span>Both</span>
+                                </label>
+                            </p>
+                        </fieldset>
+                        <label>
+                            <input type="color" name="color">
+                        </label>
+                    </div>
+                    <div class="search3">
+                        <fieldset>
+                            <legend>Additional</legend>
+                            <label class="add">
+                                <input type="checkbox" name="checkbox" value="option4">
+                                <span>Leather saloon</span>
+                            </label>
+                            <label class="add">
+                                <input type="checkbox" name="checkbox" value="option1">
+                                <span>Button start</span>
+                            </label>
+                            <label class="add">
+                                <input type="checkbox" name="checkbox" value="option2">
+                                <span>Chair heating</span>
+                            </label>
+                            <label class="add">
+                                <input type="checkbox" name="checkbox" value="option6">
+                                <span>Door closer</span>
+                            </label>
+                            <label class="add">
+                                <input type="checkbox" name="checkbox" value="option3">
+                                <span>Steering wheel heating</span>
+                            </label>
+                            <label class="add">
+                                <input type="checkbox" name="checkbox" value="option5">
+                                <span>Mirror heating</span>
+                            </label>
+
+                        </fieldset>
+                    </div>
+                    <div class="button">
+                        <input class="button" type="submit" value="Search">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>

@@ -14,16 +14,14 @@ html {
   font-weight: 400;
   line-height: 1.5;
   color: #303030;
-  background-image: url(../img/-1x-1.jpg);
-  background-size: cover;
+  background-image: url(../img/Tesla-Logo-Hero.webp);
+  /* background-size: cover; */
 }
 
 .container {
   width: 100%;
-  max-width: 1140px;
-  /* margin-left: auto; */
-  margin-top: 100px;
-  margin-right: auto;
+  max-width: 1400px;
+  margin-top: 50px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -48,7 +46,25 @@ nav {
   display: inline-block;
   margin: 15px;
 }
-h1 {
+
+form {
+  border: solid;
+  border-radius: 1rem;
+  padding: 10px;
+  width: 640px;
   text-align: center;
-  text-decoration: underline;
+  padding-left: 10px;
+  background-color: white;
+}
+
+.search3 {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+.add {
+  margin: 8px;
+}
+.button {
+  padding-left: 20px;
+  padding-right: 20px;
 }
