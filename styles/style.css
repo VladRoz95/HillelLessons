@@ -24,3 +24,33 @@
     padding-left: 15px;
     padding-right: 15px;
   }
+
+  body {
+    font-size: 20px;
+    padding: 5rem;
+}
+
+th, td {
+    padding: 0.25rem;
+}
+
+table {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.column{
+  background-color: yellow;
+}
+
+.empty{
+  background-color: white;
+}
+.calendar{
+border: solid darkgray 1px;
+}
+
+.month{
+  border:solid black 1px;
+}
