@@ -1,26 +1,171 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  float: left;
+  margin-right: 20px;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #303030;
+  background-color: #eeeff1;
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+a {
+  margin-right: 42px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+.mainpage {
+  color: #34547a;
+}
+
+nav {
+  padding-top: 79px;
+  display: inline-block;
+}
+
+.first {
+  background-color: #eeeff1;
+  text-align: left;
+  width: 540px;
+  padding-top: 160px;
+  display: inline-block;
+}
+
+.designname {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 79px;
+  color: #000000;
+  margin-bottom: 60px;
+}
+
+.designtext {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #727272;
+}
+
+.button {
+  background-color: #34547a;
+  width: 225px;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 65px;
+  margin-bottom: 141px;
+}
+
+.secabout {
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.about {
+  max-width: 540px;
+  text-align: center;
+  display: inline-block;
+  padding-top: 112px;
+  padding-bottom: 100px;
+}
+
+.aboutname {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  color: #000000;
+  margin-bottom: 50px;
+}
+
+.abouttext {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #727272;
+}
+
+.secproject {
+  background-color: #34547a;
+}
+
+.project {
+  width: 141px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: inline-block;
+  margin-right: 40px;
+}
+
+.pname {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.ptext {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+.secwork {
+  text-align: center;
+}
+.workabout {
+  text-align: center;
+  padding-top: 100px;
+  width: 540px;
+  display: inline-block;
+}
+
+.video {
   
-  img {
-    max-width: 100%;
-  }
-  
-  html {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #303030;
-  }
-  
-  .container {
-    width: 100%;
-    max-width: 1140px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
+  margin-top: 57px;
+  padding-bottom: 100px;
+}
+
+footer {
+  background-color: #34547a;
+}
+
+.fname {
+  padding-top: 50px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+  color: #ffffff;
+}
+
+.ftext {
+  padding-bottom: 50px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+  color: #ffffff;
+}
