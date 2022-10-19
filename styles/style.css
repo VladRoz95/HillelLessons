@@ -1,26 +1,286 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  img {
-    max-width: 100%;
-  }
-  
-  html {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #303030;
-  }
-  
-  .container {
-    width: 100%;
-    max-width: 1140px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #303030;
+}
+
+.container {
+  max-width: 100%;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  /* padding-left: 60px;
+  padding-right: 60px; */
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  background-color: #e6e6f0;
+  border-radius: 50%;
+}
+
+.hidden {
+  display: none;
+}
+
+/*-------------------------------------------------*/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.logo {
+  display: flex;
+  align-items: flex-start;
+}
+
+.logo p {
+  font-size: 36px;
+  line-height: 44px;
+  color: #323264;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+.position {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.phone {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #b3b3ba;
+  text-decoration: none;
+}
+.navigation .phone:hover {
+  text-decoration: underline;
+}
+
+.addres {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+}
+
+.lang {
+  display: flex;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]:checked + label {
+  background-color: #f0145a;
+  border-radius: 8px;
+}
+
+label {
+  padding: 5px 7px;
+}
+
+label:hover {
+  background: #f5f5fa;
+  border-radius: 8px;
+  padding: 5px 7px;
+}
+
+.faceb:hover {
+  fill: #f0145a;
+}
+
+
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+  gap: 15px;
+}
+
+.nav li{
+  list-style: none;
+}
+
+.nav a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #24a3ff;
+}
+.nav a:hover {
+  text-decoration: underline;
+}
+.nav a:focus {
+  text-decoration: underline;
+  color: #f0145a;
+}
+
+/*----------------------------------------------*/
+
+.main {
+  margin-top: 60px;
+}
+
+.title {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1360px;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.team {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+  margin-bottom: 60px;
+}
+
+.card {
+  width: 493.33px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.card img {
+  border-radius: 12px;
+  width: 493.33px;
+  height: 462px;
+}
+
+.user {
+  width: 493.33px;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.user h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #323264;
+}
+.user h2:hover {
+  color: #f0145a;
+}
+
+.user p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #b3b3ba;
+}
+
+.arrow:hover path {
+  stroke: #f0145a;
+}
+
+/*--------------------------------------------------*/
+
+footer {
+  background-color: #f5f5fa;
+}
+
+.foot {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footnav {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  gap: 21px;
+  width: 398px;
+}
+
+.upfoot,
+.downfoot {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.upfoot p {
+  font-size: 16px;
+  line-height: 20px;
+  color: #323264;
+}
+.upfoot a {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 1px;
+  color: #24a3ff;
+  text-decoration: none;
+}
+
+.upfoot a:hover {
+  color: #f0145a;
+}
+
+.downfoot .phone {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #46466e;
+}
+.downfoot .mail {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #24a3ff;
+  text-decoration: none;
+}
+.downfoot .mail:hover {
+  color: #f0145a;
+}
+.downfoot .facebook:hover {
+  fill: #f0145a;
+}
+
+.leftfoot p {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: right;
+  color: #b3b3ba;
+}
