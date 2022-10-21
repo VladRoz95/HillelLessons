@@ -1,18 +1,17 @@
 @media (max-width: 1920px) {
   .container {
     max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
+  }
+  .card .userphoto {
+    min-height: 400px;
   }
 }
 
 @media (max-width: 1440px) {
   .container {
     max-width: 1320px;
-    margin-left: auto;
-    margin-right: auto;
   }
-  .title {
+  .container.small {
     width: 1080px;
   }
 }
@@ -20,21 +19,20 @@
 @media (max-width: 1024px) {
   .container {
     max-width: 904px;
-    margin-left: auto;
-    margin-right: auto;
   }
-  .title {
+  .container.small {
     width: 664px;
+  }
+  .card .userphoto {
+    min-height: 400px;
   }
 }
 
 @media (max-width: 768px) {
   .container {
     max-width: 648px;
-    margin-left: auto;
-    margin-right: auto;
   }
-  .title {
+  .container.small {
     width: 648px;
   }
 
@@ -62,8 +60,7 @@
 @media (max-width: 550px) {
   .container {
     width: 520px;
-    margin-left: auto;
-    margin-right: auto;
+
     padding-right: 0;
     padding-left: 0;
   }
@@ -75,18 +72,17 @@
 @media (max-width: 520px) {
   .container {
     width: 450px;
-    margin-left: auto;
-    margin-right: auto;
+
     padding-right: 0;
     padding-left: 0;
+  }
+  .container.small {
+    width: 450px;
   }
   .title {
     font-weight: 700;
     font-size: 30px;
     line-height: 37px;
-    width: 450px;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .team {
@@ -204,18 +200,21 @@
 @media (max-width: 375px) {
   .container {
     width: 315px;
-    margin-left: auto;
-    margin-right: auto;
+
     padding-right: 0;
     padding-left: 0;
   }
+  .container.small {
+    width: 315px;
+  }
+  .card .userphoto {
+    min-height: 300px;
+  }
+
   .title {
     font-weight: 700;
     font-size: 30px;
     line-height: 37px;
-    width: 315px;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .team {

@@ -19,11 +19,17 @@ html {
 
 .container {
   max-width: 100%;
-  /* max-width: 1600px;
+  max-width: 1600px;
   margin-left: auto;
-  margin-right: auto; */
+  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+.container.small {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1360px;
+  max-width: 100%;
 }
 
 .dot {
@@ -144,11 +150,7 @@ label:hover {
 
 .title {
   margin-top: 60px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1360px;
-  max-width: 100%;
+
   font-weight: 700;
   font-size: 38px;
   line-height: 46px;
@@ -172,9 +174,16 @@ label:hover {
   gap: 15px;
 }
 
-.card img {
+.card:hover h2 {
+  color: #f0145a;
+}
+.card:hover path {
+  stroke: #f0145a;
+}
+
+.card .userphoto {
   border-radius: 12px;
-  
+  min-height: 400px;
 }
 
 .user {
@@ -188,19 +197,12 @@ label:hover {
   line-height: 20px;
   color: #323264;
 }
-.user h2:hover {
-  color: #f0145a;
-}
 
 .user p {
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: #b3b3ba;
-}
-
-.arrow:hover path {
-  stroke: #f0145a;
 }
 
 /*--------------------------------------------------*/
