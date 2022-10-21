@@ -4,7 +4,7 @@
     margin-left: auto;
     margin-right: auto;
   }
-  
+}
 
 @media (max-width: 1440px) {
   .container {
@@ -37,7 +37,7 @@
   .title {
     width: 648px;
   }
-  
+
   .team {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -59,7 +59,149 @@
   }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 550px) {
+  .container {
+    width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .team {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .container {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .team {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .upfoot,
+  .downfoot,
+  .foot {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .leftfoot p {
+    margin-top: 30px;
+  }
+  .logo {
+    position: absolute;
+    margin-top: 60px;
+  }
+  .nav {
+    margin-top: 120px;
+    justify-content: flex-start;
+  }
+
+  .dot {
+    display: none;
+  }
+
+  .header {
+    margin-top: 0;
+    width: 520px;
+  }
+  .logo {
+    position: absolute;
+    gap: 4px;
+    padding-left: 15px;
+  }
+  .logo p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .logo img {
+    width: 69.33px;
+  }
+  .logo .slash {
+    width: 11.62px;
+  }
+  .position {
+    justify-content: space-between;
+    background-color: #f5f5fa;
+    width: 520px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .position p,
+  .faceb {
+    display: none;
+  }
+
+  .menubtn {
+    display: block;
+    float: right;
+    margin-top: 12px;
+    margin-right: 15px;
+    border: none;
+    fill: none;
+    background-color: white;
+  }
+  .menubtn:hover + .nav {
+    display: block;
+  }
+  .nav {
+    display: none;
+  }
+
+  .menubtn:focus + .nav {
+    display: block;
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 12px 12px 0px 0px;
+    width: 520px;
+    height: 351px;
+    margin-top: 64px;
+    padding: 7px 0px 7px 0px;
+  }
+
+  .menubtn:focus {
+    background: #e6e6f0;
+    border-radius: 8px;
+  }
+
+  .nav li {
+    background-color: #f5f5fa;
+    border-radius: 12px;
+    list-style: none;
+    text-align: center;
+    font-size: 24px;
+    line-height: 29px;
+    color: #24a3ff;
+    width: 520px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .nav li a:active {
+    background-color: #e6e6f0;
+  }
+  .nav li a:hover {
+    color: #f0145a;
+  }
+}
+
+@media (max-width: 375px) {
   .container {
     width: 315px;
     margin-left: auto;
