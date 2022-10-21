@@ -19,11 +19,11 @@ html {
 
 .container {
   max-width: 100%;
-  max-width: 1600px;
+  /* max-width: 1600px;
   margin-left: auto;
-  margin-right: auto;
-  /* padding-left: 60px;
-  padding-right: 60px; */
+  margin-right: auto; */
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .dot {
@@ -114,8 +114,6 @@ label:hover {
   fill: #f0145a;
 }
 
-
-
 .nav {
   display: flex;
   justify-content: flex-end;
@@ -123,7 +121,7 @@ label:hover {
   gap: 15px;
 }
 
-.nav li{
+.nav li {
   list-style: none;
 }
 
@@ -144,15 +142,13 @@ label:hover {
 
 /*----------------------------------------------*/
 
-.main {
-  margin-top: 60px;
-}
-
 .title {
+  margin-top: 60px;
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 1360px;
+  max-width: 100%;
   font-weight: 700;
   font-size: 38px;
   line-height: 46px;
@@ -171,24 +167,19 @@ label:hover {
 }
 
 .card {
-  width: 493.33px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   gap: 15px;
 }
 
 .card img {
   border-radius: 12px;
-  width: 493.33px;
-  height: 462px;
+  
 }
 
 .user {
-  width: 493.33px;
   display: flex;
   justify-content: space-between;
-  gap: 15px;
 }
 
 .user h2 {
@@ -222,6 +213,8 @@ footer {
   padding: 30px 0;
   display: flex;
   justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .footnav {
@@ -229,7 +222,6 @@ footer {
   flex-direction: column;
   padding: 0px;
   gap: 21px;
-  width: 398px;
 }
 
 .upfoot,
