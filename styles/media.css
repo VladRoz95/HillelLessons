@@ -197,6 +197,23 @@
   }
 }
 
+@media (max-width:450px) {
+  .container {
+    width: 400px;
+  } 
+  .container.small {
+    width: 400px;
+  }
+  .header {
+    margin-top: 0;
+    width: 450px;
+  }
+  .position {
+    width: 450px;
+  }
+  
+}
+
 @media (max-width: 375px) {
   .container {
     width: 315px;
