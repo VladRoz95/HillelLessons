@@ -14,6 +14,18 @@
   .container.small {
     width: 1080px;
   }
+  .adrinfo {
+    width: 510px;
+  }
+  .form input {
+    width: 450px;
+  }
+  textarea {
+    width: 450px;
+  }
+  .yourcontract .button {
+    width: 450px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -25,6 +37,18 @@
   }
   .card .userphoto {
     min-height: 400px;
+  }
+  .adrinfo {
+    width: 422px;
+  }
+  .form input {
+    width: 362px;
+  }
+  textarea {
+    width: 362px;
+  }
+  .yourcontract .button {
+    width: 362px;
   }
 }
 
@@ -55,6 +79,26 @@
     margin-top: 120px;
     justify-content: flex-start;
   }
+  /*----------*/
+  .adrinfo {
+    width: 648px;
+  }
+  .form input {
+    width: 588px;
+  }
+  textarea {
+    width: 588px;
+  }
+  .yourcontract .button {
+    width: 588px;
+  }
+  .userinfo{
+    display: flex;
+    flex-direction: column;
+  }
+  .callback{
+    width: 648px;
+  }
 }
 
 @media (max-width: 550px) {
@@ -67,6 +111,30 @@
   .team {
     grid-template-columns: repeat(1, 1fr);
   }
+
+/*-------------------*/
+
+.adrinfo {
+  width: 520px;
+}
+.form input {
+  width: 460px;
+}
+textarea {
+  width: 460px;
+}
+.yourcontract .button {
+  width: 460px;
+}
+.userinfo{
+  display: flex;
+  flex-direction: column;
+}
+.callback{
+  width: 520px;
+}
+
+
 }
 
 @media (max-width: 520px) {
@@ -195,12 +263,34 @@
   .nav li a:hover {
     color: #f0145a;
   }
+
+  /*-------------------*/
+
+  .adrinfo {
+    width: 450px;
+  }
+  .form input {
+    width: 390px;
+  }
+  textarea {
+    width: 390px;
+  }
+  .yourcontract .button {
+    width: 390px;
+  }
+  .userinfo{
+    display: flex;
+    flex-direction: column;
+  }
+  .callback{
+    width: 450px;
+  }
 }
 
-@media (max-width:450px) {
+@media (max-width: 450px) {
   .container {
     width: 400px;
-  } 
+  }
   .container.small {
     width: 400px;
   }
@@ -211,7 +301,27 @@
   .position {
     width: 450px;
   }
-  
+/*-------------------*/
+
+  .adrinfo {
+    width: 400px;
+  }
+  .form input {
+    width: 340px;
+  }
+  textarea {
+    width: 340px;
+  }
+  .yourcontract .button {
+    width: 340px;
+  }
+  .userinfo{
+    display: flex;
+    flex-direction: column;
+  }
+  .callback{
+    width: 400px;
+  }
 }
 
 @media (max-width: 375px) {
@@ -344,4 +454,25 @@
   .nav li a:hover {
     color: #f0145a;
   }
+/*---------------*/
+.adrinfo {
+  width: 315px;
+}
+.form input {
+  width: 255px;
+}
+textarea {
+  width: 255px;
+}
+.yourcontract .button {
+  width: 255px;
+}
+.userinfo{
+  display: flex;
+  flex-direction: column;
+}
+.callback{
+  width: 315px;
+}
+
 }
