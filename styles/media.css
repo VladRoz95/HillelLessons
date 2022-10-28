@@ -92,12 +92,42 @@
   .yourcontract .button {
     width: 588px;
   }
-  .userinfo{
+  .user-info {
     display: flex;
     flex-direction: column;
+    /* width: 648px; */
   }
-  .callback{
+  .callback {
     width: 648px;
+  }
+}
+
+@media (max-width: 620px) {
+  .container {
+    width: 520px;
+  }
+  .container.small {
+    width: 520px;
+  }
+  .form input {
+    width: 460px;
+  }
+  textarea {
+    width: 460px;
+  }
+  .yourcontract .button {
+    width: 460px;
+  }
+  .user-info {
+    display: flex;
+    flex-direction: column;
+    /* width: 520px; */
+  }
+  .callback {
+    width: 520px;
+  }
+  .adrinfo {
+    width: 520px;
   }
 }
 
@@ -108,44 +138,51 @@
     padding-right: 0;
     padding-left: 0;
   }
+  .container.small {
+    width: 520px;
+  }
+
   .team {
     grid-template-columns: repeat(1, 1fr);
   }
 
-/*-------------------*/
+  /*-------------------*/
 
-.adrinfo {
-  width: 520px;
-}
-.form input {
-  width: 460px;
-}
-textarea {
-  width: 460px;
-}
-.yourcontract .button {
-  width: 460px;
-}
-.userinfo{
-  display: flex;
-  flex-direction: column;
-}
-.callback{
-  width: 520px;
-}
-
-
+  .adrinfo {
+    width: 520px;
+  }
+  .form input {
+    width: 460px;
+  }
+  textarea {
+    width: 460px;
+  }
+  .yourcontract .button {
+    width: 460px;
+  }
+  .user-info {
+    display: flex;
+    flex-direction: column;
+    /* width: 520px; */
+  }
+  .callback {
+    width: 520px;
+  }
 }
 
 @media (max-width: 520px) {
   .container {
-    width: 450px;
+    width: 520px;
 
     padding-right: 0;
     padding-left: 0;
   }
   .container.small {
     width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .title {
     font-weight: 700;
@@ -278,11 +315,12 @@ textarea {
   .yourcontract .button {
     width: 390px;
   }
-  .userinfo{
+  .user-info {
     display: flex;
     flex-direction: column;
+    /* width: 450px; */
   }
-  .callback{
+  .callback {
     width: 450px;
   }
 }
@@ -301,7 +339,7 @@ textarea {
   .position {
     width: 450px;
   }
-/*-------------------*/
+  /*-------------------*/
 
   .adrinfo {
     width: 400px;
@@ -315,11 +353,12 @@ textarea {
   .yourcontract .button {
     width: 340px;
   }
-  .userinfo{
+  .user-info {
     display: flex;
     flex-direction: column;
+    /* width: 400px; */
   }
-  .callback{
+  .callback {
     width: 400px;
   }
 }
@@ -454,25 +493,25 @@ textarea {
   .nav li a:hover {
     color: #f0145a;
   }
-/*---------------*/
-.adrinfo {
-  width: 315px;
-}
-.form input {
-  width: 255px;
-}
-textarea {
-  width: 255px;
-}
-.yourcontract .button {
-  width: 255px;
-}
-.userinfo{
-  display: flex;
-  flex-direction: column;
-}
-.callback{
-  width: 315px;
-}
-
+  /*---------------*/
+  .adrinfo {
+    width: 315px;
+  }
+  .form input {
+    width: 255px;
+  }
+  textarea {
+    width: 255px;
+  }
+  .yourcontract .button {
+    width: 255px;
+  }
+  .user-info {
+    display: flex;
+    flex-direction: column;
+    /* width: 315px; */
+  }
+  .callback {
+    width: 315px;
+  }
 }
