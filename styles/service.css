@@ -15,6 +15,12 @@ html {
   font-weight: 400;
   line-height: 1.5;
   color: #303030;
+  background: linear-gradient(
+    228.57deg,
+    #323264 11.93%,
+    #323264 57.17%,
+    #643e72 87.46%
+  );
 }
 
 .container {
@@ -24,6 +30,7 @@ html {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  
 }
 .container.small {
   margin-left: auto;
@@ -145,178 +152,38 @@ label:hover {
   text-decoration: underline;
   color: #f0145a;
 }
-.nav a:active {
-  text-decoration: underline;
-  color: #f0145a;
-}
 
 /*----------------------------------------------*/
-.user-info {
-  display: flex;
-  justify-content: space-between;
+.servicecards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 60px;
-  margin-top: 60px;
-  margin-bottom: 60px;
 }
-
-.adrinfo {
-  display: flex;
-  flex-direction: column;
-  /* width: 650px; */
-}
-hr {
-  width: initial;
-}
-.adrinfo p {
-  font-size: 21px;
-  line-height: 30px;
-  color: #323264;
-}
-.adrinfo hr {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  height: 4px;
-  background: #e6e6f0;
-  border: none;
-}
-.adrinfo .phone {
-  margin-bottom: 15px;
-  font-size: 21px;
-  line-height: 30px;
-  color: #46466e;
-}
-.adrinfo .mail {
-  font-size: 21px;
-  line-height: 30px;
-  color: #24a3ff;
-  text-decoration: none;
-}
-.adrinfo .mail:hover {
-  color: #f0145a;
-}
-.facemore {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none;
-}
-.facemore:hover .facebook {
-  fill: #f0145a;
-}
-.facemore:hover span {
-  color: #f0145a;
-}
-.facemore span {
+h1 {
   font-weight: 700;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #24a3ff;
-}
-
-.callback {
-  display: flex;
-  justify-content: center;
-  background: #f5f5fa;
-  border-radius: 12px;
-  padding: 30px;
-  overflow: hidden;
-}
-.form {
-  display: flex;
-  flex-direction: column;
-align-items: flex-start;
-  /* gap: 30px; */
-}
-.form input {
-  padding: 15px;
-  gap: 10px;
-  width: 590px;
-
-  height: 56px;
-  background: #ffffff;
-  border: 1px solid #ffffff;
-  border-radius: 8px;
-}
-.form .inputborder:focus {
-  border-color: #24a3ff;
-}
-textarea {
-  resize: none;
-  padding: 15px;
-  gap: 10px;
-  width: 590px;
-
-  height: 130px;
-  background: #ffffff;
-  border: 1px solid #ffffff;
-  border-radius: 8px;
-}
-::placeholder {
-  font-size: 16px;
-  line-height: 26px;
-  color: #b3b3ba;
-}
-
-.yourname {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-  margin-bottom: 30px;
-}
-.yourcontract {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-}
-
-.form h2 {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 37px;
+  font-size: 38px;
+  line-height: 46px;
   background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  margin-bottom: 30px;
-  
+  margin-bottom: 60px;
 }
-.form h3 {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 17px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #b3b3ba;
-  margin-bottom: 15px;
-
+.sercard svg {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 14px;
 }
-
-.yourcontract .button {
-  margin-top: 15px;
-  padding: 18px 30px;
-  gap: 10px;
-  width: 590px;
-
-  height: 56px;
-  background-color: #24a3ff;
+.sercard h3 {
   font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  color: #24a3ff;
+}
+.sercard p {
   font-size: 16px;
-  line-height: 20px;
-  text-align: center;
+  line-height: 26px;
   color: #ffffff;
-  border-radius: 12px;
-  text-align: center;
-}
-.yourcontract .button:hover {
-  background: #0085ff;
-}
-.yourcontract .button:active {
-  background: #006ccf;
 }
 
 /*--------------------------------------------------*/
@@ -331,7 +198,6 @@ footer {
   justify-content: space-between;
   padding-left: 15px;
   padding-right: 15px;
-  background-color: #f5f5fa;
 }
 
 .footnav {

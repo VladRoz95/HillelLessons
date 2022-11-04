@@ -5,6 +5,7 @@
   .card .userphoto {
     min-height: 400px;
   }
+ 
 }
 
 @media (max-width: 1440px) {
@@ -15,9 +16,9 @@
     width: 1080px;
   }
   .adrinfo {
-    width: 510px;
+    /* width: 510px; */
   }
-  .form input {
+  /* .form input {
     width: 450px;
   }
   textarea {
@@ -25,7 +26,7 @@
   }
   .yourcontract .button {
     width: 450px;
-  }
+  } */
 }
 
 @media (max-width: 1024px) {
@@ -33,13 +34,12 @@
     max-width: 904px;
   }
   .container.small {
-    width: 664px;
+    width: 904px;
   }
   .card .userphoto {
     min-height: 400px;
   }
   .adrinfo {
-    width: 422px;
   }
   .form input {
     width: 362px;
@@ -66,6 +66,7 @@
   .foot {
     width: 398px;
     flex-direction: column;
+    padding: 30px 0;
   }
   .leftfoot p {
     text-align: center;
@@ -79,9 +80,8 @@
     margin-top: 120px;
     justify-content: flex-start;
   }
-  /*----------*/
+  /*------------------------------------------*/
   .adrinfo {
-    width: 648px;
   }
   .form input {
     width: 588px;
@@ -95,10 +95,8 @@
   .user-info {
     display: flex;
     flex-direction: column;
-    /* width: 648px; */
   }
   .callback {
-    width: 648px;
   }
 }
 
@@ -109,6 +107,10 @@
   .container.small {
     width: 520px;
   }
+  .foot {
+    width: 398px;
+    padding: 30px 0;
+  }
   .form input {
     width: 460px;
   }
@@ -121,13 +123,11 @@
   .user-info {
     display: flex;
     flex-direction: column;
-    /* width: 520px; */
+    justify-content: center;
   }
   .callback {
-    width: 520px;
   }
   .adrinfo {
-    width: 520px;
   }
 }
 
@@ -145,11 +145,15 @@
   .team {
     grid-template-columns: repeat(1, 1fr);
   }
+  .foot{
+    padding: 30px 0;
+    width: 398px;
+
+  }
 
   /*-------------------*/
 
   .adrinfo {
-    width: 520px;
   }
   .form input {
     width: 460px;
@@ -163,10 +167,9 @@
   .user-info {
     display: flex;
     flex-direction: column;
-    /* width: 520px; */
+    
   }
   .callback {
-    width: 520px;
   }
 }
 
@@ -178,11 +181,11 @@
     padding-left: 0;
   }
   .container.small {
-    width: 450px;
+    width: 480px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   .title {
     font-weight: 700;
@@ -304,33 +307,33 @@
   /*-------------------*/
 
   .adrinfo {
-    width: 450px;
   }
   .form input {
-    width: 390px;
+    width: 360px;
   }
   textarea {
-    width: 390px;
+    width: 360px;
   }
   .yourcontract .button {
-    width: 390px;
+    width: 360px;
   }
   .user-info {
     display: flex;
     flex-direction: column;
-    /* width: 450px; */
   }
   .callback {
-    width: 450px;
   }
 }
 
+
 @media (max-width: 450px) {
   .container {
-    width: 400px;
+    width: 450px;
   }
   .container.small {
     width: 400px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .header {
     margin-top: 0;
@@ -341,37 +344,39 @@
   }
   /*-------------------*/
 
-  .adrinfo {
-    width: 400px;
+  .form {
+    display: flex;
+    align-items: center;
   }
   .form input {
-    width: 340px;
+    width: 280px;
   }
   textarea {
-    width: 340px;
+    width: 280px;
   }
   .yourcontract .button {
-    width: 340px;
+    width: 280px;
   }
+  
   .user-info {
     display: flex;
     flex-direction: column;
-    /* width: 400px; */
+    
   }
   .callback {
-    width: 400px;
   }
 }
 
 @media (max-width: 375px) {
   .container {
-    width: 315px;
+    width: 375px;
 
     padding-right: 0;
     padding-left: 0;
   }
   .container.small {
-    width: 315px;
+    /* width: 315px; */
+    
   }
   .card .userphoto {
     min-height: 300px;
@@ -495,7 +500,6 @@
   }
   /*---------------*/
   .adrinfo {
-    width: 315px;
   }
   .form input {
     width: 255px;
@@ -509,9 +513,8 @@
   .user-info {
     display: flex;
     flex-direction: column;
-    /* width: 315px; */
+    
   }
   .callback {
-    width: 315px;
   }
 }
