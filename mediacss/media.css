@@ -1,0 +1,495 @@
+@media (max-width: 1920px) {
+  .container {
+    max-width: 1600px;
+  }
+  .card .userphoto {
+    min-height: 400px;
+  }
+ 
+}
+
+@media (max-width: 1440px) {
+  .container {
+    max-width: 1320px;
+  }
+  .container.small {
+    width: 1080px;
+  }
+  
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 904px;
+  }
+  .container.small {
+    width: 904px;
+  }
+  .card .userphoto {
+    min-height: 400px;
+  }
+  
+  .form input {
+    width: 362px;
+  }
+  textarea {
+    width: 362px;
+  }
+  .yourcontract .button {
+    width: 362px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 648px;
+  }
+  .container.small {
+    width: 648px;
+  }
+
+  .team {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .foot {
+    width: 398px;
+    flex-direction: column;
+    padding: 30px 0;
+  }
+  .leftfoot p {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .logo {
+    position: absolute;
+    margin-top: 60px;
+  }
+  .nav {
+    margin-top: 120px;
+    justify-content: flex-start;
+  }
+  /*------------------------------------------*/
+  .adrinfo {
+  }
+  .form input {
+    width: 588px;
+  }
+  textarea {
+    width: 588px;
+  }
+  .yourcontract .button {
+    width: 588px;
+  }
+  .user-info {
+    display: flex;
+    flex-direction: column;
+  }
+  .callback {
+  }
+}
+
+@media (max-width: 620px) {
+  .container {
+    width: 520px;
+  }
+  .container.small {
+    width: 520px;
+  }
+  .foot {
+    width: 398px;
+    padding: 30px 0;
+  }
+  .form input {
+    width: 460px;
+  }
+  textarea {
+    width: 460px;
+  }
+  .yourcontract .button {
+    width: 460px;
+  }
+  .user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+}
+
+@media (max-width: 550px) {
+  .container {
+    width: 520px;
+
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .container.small {
+    width: 520px;
+  }
+
+  .team {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .foot{
+    padding: 30px 0;
+    width: 398px;
+
+  }
+
+  /*-------------------*/
+
+  
+  .form input {
+    width: 460px;
+  }
+  textarea {
+    width: 460px;
+  }
+  .yourcontract .button {
+    width: 460px;
+  }
+  .user-info {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+}
+
+@media (max-width: 520px) {
+  .container {
+    width: 520px;
+
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .container.small {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .team {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .upfoot,
+  .downfoot,
+  .foot {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .leftfoot p {
+    margin-top: 30px;
+  }
+  .logo {
+    position: absolute;
+    margin-top: 60px;
+  }
+  .nav {
+    margin-top: 120px;
+    justify-content: flex-start;
+  }
+
+  .dot {
+    display: none;
+  }
+
+  .header {
+    margin-top: 0;
+    width: 520px;
+  }
+  .logo {
+    position: absolute;
+    gap: 4px;
+    padding-left: 15px;
+  }
+  .logo p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .logo img {
+    width: 69.33px;
+  }
+  .logo .slash {
+    width: 11.62px;
+  }
+  .position {
+    justify-content: space-between;
+    background-color: #f5f5fa;
+    width: 520px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .position p,
+  .faceb {
+    display: none;
+  }
+
+  .menubtn {
+    display: block;
+    float: right;
+    margin-top: 12px;
+    margin-right: 15px;
+    border: none;
+    fill: none;
+    background-color: white;
+  }
+  .menubtn:hover + .nav {
+    display: block;
+  }
+  .nav {
+    display: none;
+  }
+
+  .menubtn:focus + .nav {
+    display: block;
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 12px 12px 0px 0px;
+    width: 520px;
+    height: 351px;
+    margin-top: 64px;
+    padding: 7px 0px 7px 0px;
+  }
+
+  .menubtn:focus {
+    background: #e6e6f0;
+    border-radius: 8px;
+  }
+
+  .nav li {
+    background-color: #f5f5fa;
+    border-radius: 12px;
+    list-style: none;
+    text-align: center;
+    font-size: 24px;
+    line-height: 29px;
+    color: #24a3ff;
+    width: 520px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .nav li a:active {
+    background-color: #e6e6f0;
+  }
+  .nav li a:hover {
+    color: #f0145a;
+  }
+
+  /*-------------------*/
+
+  
+  .form input {
+    width: 360px;
+  }
+  textarea {
+    width: 360px;
+  }
+  .yourcontract .button {
+    width: 360px;
+  }
+  .user-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
+
+
+@media (max-width: 450px) {
+  .container {
+    width: 450px;
+  }
+  .container.small {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .header {
+    margin-top: 0;
+    width: 450px;
+  }
+  .position {
+    width: 450px;
+  }
+  /*-------------------*/
+
+  .form {
+    display: flex;
+    align-items: center;
+  }
+  .form input {
+    width: 280px;
+  }
+  textarea {
+    width: 280px;
+  }
+  .yourcontract .button {
+    width: 280px;
+  }
+  
+  .user-info {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+}
+
+@media (max-width: 375px) {
+  .container {
+    width: 375px;
+
+    padding-right: 0;
+    padding-left: 0;
+  }
+  
+  .card .userphoto {
+    min-height: 300px;
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .team {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .upfoot,
+  .downfoot,
+  .foot {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .leftfoot p {
+    margin-top: 30px;
+  }
+  .logo {
+    position: absolute;
+    margin-top: 60px;
+  }
+  .nav {
+    margin-top: 120px;
+    justify-content: flex-start;
+  }
+
+  .dot {
+    display: none;
+  }
+
+  .header {
+    margin-top: 0;
+    width: 375px;
+  }
+  .logo {
+    position: absolute;
+    gap: 4px;
+    padding-left: 15px;
+  }
+  .logo p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .logo img {
+    width: 69.33px;
+  }
+  .logo .slash {
+    width: 11.62px;
+  }
+  .position {
+    justify-content: space-between;
+    background-color: #f5f5fa;
+    width: 375px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .position p,
+  .faceb {
+    display: none;
+  }
+
+  .menubtn {
+    display: block;
+    float: right;
+    margin-top: 12px;
+    margin-right: 15px;
+    border: none;
+    fill: none;
+    background-color: white;
+  }
+  .menubtn:hover + .nav {
+    display: block;
+  }
+  .nav {
+    display: none;
+  }
+
+  .menubtn:focus + .nav {
+    display: block;
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 12px 12px 0px 0px;
+    width: 359px;
+    height: 351px;
+    margin-top: 64px;
+    padding: 7px 0px 7px 0px;
+  }
+
+  .menubtn:focus {
+    background: #e6e6f0;
+    border-radius: 8px;
+  }
+
+  .nav li {
+    background-color: #f5f5fa;
+    border-radius: 12px;
+    list-style: none;
+    text-align: center;
+    font-size: 24px;
+    line-height: 29px;
+    color: #24a3ff;
+    width: 335px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .nav li a:active {
+    background-color: #e6e6f0;
+  }
+  .nav li a:hover {
+    color: #f0145a;
+  }
+  /*---------------*/
+  
+  .form input {
+    width: 255px;
+  }
+  textarea {
+    width: 255px;
+  }
+  .yourcontract .button {
+    width: 255px;
+  }
+  .user-info {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+}

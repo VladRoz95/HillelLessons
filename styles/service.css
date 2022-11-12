@@ -15,12 +15,6 @@ html {
   font-weight: 400;
   line-height: 1.5;
   color: #303030;
-  background: linear-gradient(
-    228.57deg,
-    #323264 11.93%,
-    #323264 57.17%,
-    #643e72 87.46%
-  );
 }
 
 .container {
@@ -30,13 +24,14 @@ html {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  
 }
 .container.small {
   margin-left: auto;
   margin-right: auto;
-  width: 1360px;
+  width: 1720px;
   max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .dot {
@@ -49,13 +44,24 @@ html {
 .hidden {
   display: none;
 }
+.gradient {
+  background: linear-gradient(
+    228.57deg,
+    #323264 11.93%,
+    #323264 57.17%,
+    #643e72 87.46%
+  );
+  border-radius: 0px 0px 12px 12px;
+}
 
 /*-------------------------------------------------*/
-
+header {
+  background: #323264;
+}
 .header {
   display: flex;
   justify-content: space-between;
-  margin-top: 50px;
+  padding-top: 50px;
 }
 
 .logo {
@@ -66,7 +72,7 @@ html {
 .logo p {
   font-size: 36px;
   line-height: 44px;
-  color: #323264;
+  color: #ffffff;
 }
 
 .navigation {
@@ -86,7 +92,7 @@ html {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  color: #b3b3ba;
+  color: #ffffff;
   text-decoration: none;
 }
 .navigation .phone:hover {
@@ -99,9 +105,15 @@ html {
   align-items: center;
   gap: 6px;
 }
+.addres p {
+  color: #ffffff;
+}
 
 .lang {
   display: flex;
+}
+.lang label {
+  color: #ffffff;
 }
 
 input[type="radio"] {
@@ -143,7 +155,7 @@ label:hover {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  color: #24a3ff;
+  color: #ffffff;
 }
 .nav a:hover {
   text-decoration: underline;
@@ -154,10 +166,21 @@ label:hover {
 }
 
 /*----------------------------------------------*/
+.better {
+  background: linear-gradient(
+    228.57deg,
+    #323264 11.93%,
+    #323264 57.17%,
+    #643e72 87.46%
+  );
+  border-radius: 0px 0px 12px 12px;
+}
 .servicecards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 60px;
+  padding-bottom: 60px;
+  border-radius: 0px 0px 12px 12px;
 }
 h1 {
   font-weight: 700;
@@ -167,23 +190,50 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  margin-bottom: 60px;
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
-.sercard svg {
-  background: #ffffff;
-  border-radius: 15px;
-  padding: 14px;
+.sercard img{
+  margin-bottom: 30px;
+
 }
 .sercard h3 {
   font-weight: 700;
   font-size: 22px;
   line-height: 27px;
   color: #24a3ff;
+  margin-bottom: 15px;
 }
 .sercard p {
   font-size: 16px;
   line-height: 26px;
   color: #ffffff;
+}
+
+.sponsors {
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+}
+.sponsors h2{
+  margin-bottom: 30px;
+}
+.sponsor-logo{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-radius: 12px;
+}
+.sponsor-logo .sponsor {
+  width: 100%;
+  min-height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1 ;
+}
+.sponsor img{
+  max-width: 100%;
 }
 
 /*--------------------------------------------------*/

@@ -2,10 +2,9 @@
   .container {
     max-width: 1600px;
   }
-  .card .userphoto {
-    min-height: 400px;
+  .container.small {
+    width: 1720px;
   }
- 
 }
 
 @media (max-width: 1440px) {
@@ -13,20 +12,15 @@
     max-width: 1320px;
   }
   .container.small {
+    width: 1440px;
+  }
+
+  .photo {
+    min-height: 344px;
+  }
+  .hiddenmenu {
     width: 1080px;
   }
-  .adrinfo {
-    /* width: 510px; */
-  }
-  /* .form input {
-    width: 450px;
-  }
-  textarea {
-    width: 450px;
-  }
-  .yourcontract .button {
-    width: 450px;
-  } */
 }
 
 @media (max-width: 1024px) {
@@ -34,21 +28,13 @@
     max-width: 904px;
   }
   .container.small {
-    width: 904px;
+    width: 1024px;
   }
-  .card .userphoto {
-    min-height: 400px;
+  .photo {
+    min-height: 528px;
   }
-  .adrinfo {
-  }
-  .form input {
-    width: 362px;
-  }
-  textarea {
-    width: 362px;
-  }
-  .yourcontract .button {
-    width: 362px;
+  .hiddenmenu {
+    max-width: 904px;
   }
 }
 
@@ -57,12 +43,11 @@
     max-width: 648px;
   }
   .container.small {
-    width: 648px;
+    width: 768px;
   }
 
-  .team {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  /*------------------*/
+
   .foot {
     width: 398px;
     flex-direction: column;
@@ -81,22 +66,25 @@
     justify-content: flex-start;
   }
   /*------------------------------------------*/
-  .adrinfo {
+  .servicecards {
+    grid-template-columns: repeat(2, 1fr);
   }
-  .form input {
-    width: 588px;
+  .sponsor-logo {
+    grid-template-columns: repeat(3, 1fr);
   }
-  textarea {
-    width: 588px;
-  }
-  .yourcontract .button {
-    width: 588px;
-  }
-  .user-info {
-    display: flex;
+  .teamcard {
     flex-direction: column;
   }
-  .callback {
+  .hiddenmenu {
+    flex-direction: column;
+    max-width: 648px;
+  }
+  .vl {
+    display: none;
+  }
+  .pubcards {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -105,29 +93,10 @@
     width: 520px;
   }
   .container.small {
+    width: 620px;
+  }
+  .hiddenmenu {
     width: 520px;
-  }
-  .foot {
-    width: 398px;
-    padding: 30px 0;
-  }
-  .form input {
-    width: 460px;
-  }
-  textarea {
-    width: 460px;
-  }
-  .yourcontract .button {
-    width: 460px;
-  }
-  .user-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .callback {
-  }
-  .adrinfo {
   }
 }
 
@@ -139,62 +108,29 @@
     padding-left: 0;
   }
   .container.small {
-    width: 520px;
+    width: 550px;
   }
 
-  .team {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .foot{
+  .foot {
     padding: 30px 0;
     width: 398px;
-
   }
 
   /*-------------------*/
-
-  .adrinfo {
-  }
-  .form input {
-    width: 460px;
-  }
-  textarea {
-    width: 460px;
-  }
-  .yourcontract .button {
-    width: 460px;
-  }
-  .user-info {
-    display: flex;
-    flex-direction: column;
-    
-  }
-  .callback {
+  .hiddenmenu {
+    width: 520px;
   }
 }
 
 @media (max-width: 520px) {
   .container {
-    width: 520px;
+    width: 450px;
 
     padding-right: 0;
     padding-left: 0;
   }
   .container.small {
-    width: 480px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  .title {
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 37px;
-  }
-
-  .team {
-    grid-template-columns: repeat(1, 1fr);
+    width: 520px;
   }
 
   .upfoot,
@@ -223,6 +159,7 @@
 
   .header {
     margin-top: 0;
+    padding-top: 0;
     width: 520px;
   }
   .logo {
@@ -242,7 +179,7 @@
   }
   .position {
     justify-content: space-between;
-    background-color: #f5f5fa;
+    background-color: rgba(245, 245, 250, 0.2);
     width: 520px;
     padding-left: 15px;
     padding-right: 15px;
@@ -259,7 +196,7 @@
     margin-right: 15px;
     border: none;
     fill: none;
-    background-color: white;
+    background-color: #323264;
   }
   .menubtn:hover + .nav {
     display: block;
@@ -271,7 +208,7 @@
   .menubtn:focus + .nav {
     display: block;
     position: absolute;
-    background-color: #ffffff;
+    background-color: #323264;
     border-radius: 12px 12px 0px 0px;
     width: 520px;
     height: 351px;
@@ -280,60 +217,60 @@
   }
 
   .menubtn:focus {
-    background: #e6e6f0;
+    background: #323264;
     border-radius: 8px;
   }
 
   .nav li {
-    background-color: #f5f5fa;
+    background-color: #323264;
     border-radius: 12px;
     list-style: none;
     text-align: center;
     font-size: 24px;
     line-height: 29px;
-    color: #24a3ff;
+    color: #ffffff;
     width: 520px;
 
     margin-left: auto;
     margin-right: auto;
   }
   .nav li a:active {
-    background-color: #e6e6f0;
+    background-color: #323264;
   }
   .nav li a:hover {
     color: #f0145a;
   }
 
   /*-------------------*/
-
-  .adrinfo {
+  .servicecards {
+    grid-template-columns: repeat(1, 1fr);
   }
-  .form input {
-    width: 360px;
+  .sponsor-logo {
+    grid-template-columns: repeat(2, 1fr);
   }
-  textarea {
-    width: 360px;
+  .hiddenmenu {
+    width: 450px;
   }
-  .yourcontract .button {
-    width: 360px;
+  .card h2 {
+    font-size: 30px;
+    line-height: 37px;
   }
-  .user-info {
-    display: flex;
-    flex-direction: column;
+  .publication h2 {
+    font-size: 30px;
+    line-height: 37px;
   }
-  .callback {
+  h1 {
+    font-size: 30px;
+    line-height: 37px;
   }
 }
 
-
 @media (max-width: 450px) {
   .container {
-    width: 450px;
+    width: 400px;
   }
   .container.small {
-    width: 400px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 450px;
   }
   .header {
     margin-top: 0;
@@ -344,52 +281,27 @@
   }
   /*-------------------*/
 
-  .form {
-    display: flex;
-    align-items: center;
+  .servicecards {
+    grid-template-columns: repeat(1, 1fr);
   }
-  .form input {
-    width: 280px;
+  .sponsor-logo {
+    grid-template-columns: repeat(1, 1fr);
   }
-  textarea {
-    width: 280px;
+  .hiddenmenu {
+    width: 400px;
   }
-  .yourcontract .button {
-    width: 280px;
-  }
-  
-  .user-info {
-    display: flex;
-    flex-direction: column;
-    
-  }
-  .callback {
-  }
+ 
 }
 
 @media (max-width: 375px) {
   .container {
-    width: 375px;
+    width: 315px;
 
     padding-right: 0;
     padding-left: 0;
   }
   .container.small {
-    /* width: 315px; */
-    
-  }
-  .card .userphoto {
-    min-height: 300px;
-  }
-
-  .title {
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 37px;
-  }
-
-  .team {
-    grid-template-columns: repeat(1, 1fr);
+    width: 375px;
   }
 
   .upfoot,
@@ -437,7 +349,7 @@
   }
   .position {
     justify-content: space-between;
-    background-color: #f5f5fa;
+    background-color: rgba(245, 245, 250, 0.2);
     width: 375px;
     padding-left: 15px;
     padding-right: 15px;
@@ -454,7 +366,7 @@
     margin-right: 15px;
     border: none;
     fill: none;
-    background-color: white;
+    background-color: #323264;
   }
   .menubtn:hover + .nav {
     display: block;
@@ -466,7 +378,7 @@
   .menubtn:focus + .nav {
     display: block;
     position: absolute;
-    background-color: #ffffff;
+    background-color: #323264;
     border-radius: 12px 12px 0px 0px;
     width: 359px;
     height: 351px;
@@ -475,46 +387,38 @@
   }
 
   .menubtn:focus {
-    background: #e6e6f0;
+    background-color: #323264;
     border-radius: 8px;
   }
 
   .nav li {
-    background-color: #f5f5fa;
+    background-color: #323264;
     border-radius: 12px;
     list-style: none;
     text-align: center;
     font-size: 24px;
     line-height: 29px;
-    color: #24a3ff;
+    color: #ffffff;
     width: 335px;
 
     margin-left: auto;
     margin-right: auto;
   }
   .nav li a:active {
-    background-color: #e6e6f0;
+    background-color: #323264;
   }
   .nav li a:hover {
     color: #f0145a;
   }
   /*---------------*/
-  .adrinfo {
+  .servicecards {
+    grid-template-columns: repeat(1, 1fr);
   }
-  .form input {
-    width: 255px;
+  .sponsor-logo {
+    grid-template-columns: repeat(1, 1fr);
   }
-  textarea {
-    width: 255px;
+  .hiddenmenu {
+    width: 315px;
   }
-  .yourcontract .button {
-    width: 255px;
-  }
-  .user-info {
-    display: flex;
-    flex-direction: column;
-    
-  }
-  .callback {
-  }
+  
 }
