@@ -139,28 +139,28 @@ label:hover {
   fill: #f0145a;
 }
 
-.nav {
+.navhead {
   display: flex;
   justify-content: flex-end;
   margin-top: 16px;
   gap: 15px;
 }
 
-.nav li {
+.navhead li {
   list-style: none;
 }
 
-.nav a {
+.navhead a {
   text-decoration: none;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
 }
-.nav a:hover {
+.navhead a:hover {
   text-decoration: underline;
 }
-.nav a:focus {
+.navhead a:focus {
   text-decoration: underline;
   color: #f0145a;
 }

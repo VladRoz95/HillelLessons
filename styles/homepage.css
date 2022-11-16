@@ -74,22 +74,27 @@ html {
   bottom: 1rem;
   left: 50%;
   transform: translateX(-50%);
+  background-color: inherit;
+  border: none;
 }
-.menu button:hover .scroll path {
+.menu button:hover .arrow path {
   stroke: #f0145a;
 }
-.menu button:hover .scroll circle {
+.menu button:hover .arrow circle {
   stroke: #f0145a;
 }
-.menu button:focus .scroll path {
+.menu button:focus .arrow path {
   stroke: #f0145a;
 }
-.menu button:focus .scroll circle {
+.menu button:focus .arrow circle {
   stroke: #f0145a;
 }
 .menu button:focus + .hiddenmenu {
   display: flex;
 }
+
+
+
 
 /*-------------------------------------------------*/
 .head {
@@ -148,6 +153,7 @@ html {
 }
 .addres p {
   color: #ffffff;
+  margin-bottom: 0;
 }
 
 .lang {
@@ -180,92 +186,91 @@ label:hover {
   fill: #f0145a;
 }
 
-.nav {
+.navhead {
   display: flex;
   justify-content: flex-end;
   margin-top: 16px;
   gap: 15px;
 }
 
-.nav li {
+.navhead li {
   list-style: none;
 }
 
-.nav a {
+.navhead a {
   text-decoration: none;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
 }
-.nav a:hover {
+.navhead a:hover {
   text-decoration: underline;
 }
-.nav a:focus {
+.navhead a:focus {
   text-decoration: underline;
   color: #f0145a;
 }
 
 /*----------------------------------------------*/
-
-.vl {
-  display: flex;
-  height: 303px;
-  border-left: 2px solid #d0d0d0;
-  width: 4px;
-}
-.hiddenmenu {
+.menu {
   width: 1360px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 60px;
-  display: flex;
-  flex-direction: row;
-  padding: 0px;
-  justify-content: space-between;
-  gap: 60px ;
 }
-.leftmenu {
-  /* max-width: 100%; */
+.nav {
+  border-right: 4px solid #ffffff4d;
   display: flex;
+  align-items: flex-end;
   flex-wrap: wrap;
-  /* justify-content: flex-end; */
-  padding: 0px;
+  padding: 0 50px 0 0;
   gap: 30px;
-  
 }
-.leftmenu p {
+.nav-link {
+  color: #b3b3ba;
   font-weight: 700;
   font-size: 38px;
   line-height: 46px;
-  color: #b3b3ba;
 }
-.leftmenu p:hover {
+.nav-link:hover {
+  background-color: inherit;
   background: linear-gradient(90.13deg, #ef8080 0.84%, #f0145a 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-.rightmenu {
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: inherit;
+  background: linear-gradient(90.13deg, #ef8080 0.84%, #f0145a 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.tab-content{
+  display: flex;
+  justify-content: center;
+}
+.tab-content>.active {
   display: flex;
   flex-direction: column;
-  /* align-items: flex-start; */
   justify-content: center;
-  padding: 0px;
-  gap: 30px;
+  align-items: flex-start;
+  padding-left: 60px;
 }
-.rightmenu h2 {
+.tab-pane h2 {
   font-weight: 700;
   font-size: 30px;
   line-height: 37px;
   margin-bottom: 30px;
 }
-.rightmenu p {
+.tab-pane p {
   font-weight: 400;
   font-size: 19px;
   line-height: 30px;
 }
-
 /*----------------------------------------------*/
 .better {
   padding-top: 60px;
@@ -323,44 +328,51 @@ h1 {
 }
 /*--------------*/
 .teamcard {
-  padding-top: 60px;
-  display: flex;
-  flex-direction: row;
+  margin-top: 60px;
+  background-color: #F5F5FA;
   border-radius: 12px;
 }
-.photo {
-  object-fit: cover;
-  min-height: 298px;
-  float: left;
-}
-.card {
-  background-color: #ededf7;
+.usercard{
   display: flex;
-  flex-direction: column;
-  /* align-items: flex-start; */
-  justify-content: center;
+  min-height: 298px;
+}
+.photo{
+  height: 298px;
+  border-radius: 12px 0 0 12px;
+}
+.carousel-indicators{
+  bottom: -60px;
+  
+}
+.carousel-indicators [data-bs-target]{
+  background-color: #24A3FF;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+.carduser {
   padding: 30px;
 }
-.card a {
+.carduser a {
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #24a3ff;
+  margin-top: 30px;
   margin-bottom: 5px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   text-decoration: none;
-  display: flex;
-  align-items: center;
+  
 }
-.card a:hover {
+.carduser a:hover {
   color: #f0145a;
 }
-.card a:hover svg path {
+.carduser a:hover svg path {
   stroke: #f0145a;
 }
-.card h2 {
+.carduser .userdisc {
   font-weight: 700;
   font-size: 38px;
   line-height: 46px;
@@ -372,6 +384,7 @@ h1 {
 }
 .name {
   margin-top: 30px;
+  margin-bottom: 6px;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -381,23 +394,9 @@ h1 {
   font-size: 14px;
   line-height: 22px;
   color: #b3b3ba;
+  margin-bottom: 0;
 }
-.tdot {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 15px;
-}
-.dotblue {
-  width: 16px;
-  height: 16px;
-  background-color: #24a3ff;
-  border-radius: 50%;
-}
-.dotblue.light {
-  opacity: 0.2;
-}
+
 /*--------------*/
 .publication {
   padding-top: 30px;
@@ -432,16 +431,21 @@ h1 {
   margin-bottom: 30px;
 }
 .pubcards {
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+gap: 30px ;
+}
+.pubcard{
+  background-color: #FFFFFF;
+  border-radius: 12px;
+}
+.pubcard img{
+  border-radius: 12px 12px 0 0 ;
+  min-height: 200px;
+  min-width: 100%;
 }
 .carddisc {
-  /* display: flex;
-  flex-direction: column; */
-  justify-content: center;
-  align-items: flex-start;
-  padding: 30px 30px 70px 30px;
+  padding: 30px;
 }
 .carddisc h3 {
   font-weight: 700;
@@ -450,7 +454,6 @@ h1 {
   color: #24a3ff;
 }
 .carddisc hr {
-  /* width: 453.33px; */
   height: 4px;
   background: #e6e6f0;
   border: none;
@@ -471,24 +474,17 @@ h1 {
   font-size: 14px;
   line-height: 22px;
   color: #000000;
+  
 }
-.pubcard img {
-  min-height: 200px;
-}
-.pubcard {
-  background-color: #ffffff;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-}
+
 /*--------------*/
 
 .sponsors {
   text-align: center;
-  padding-top: 60px;
+  padding-top: 90px;
   padding-bottom: 60px;
 }
-.sponsors h2 {
+.sponsors .spontitle {
   margin-bottom: 30px;
 }
 .sponsor-logo {
